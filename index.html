@@ -161,6 +161,21 @@
 
     @media (max-width:900px){ .pro-footer .wrap{ grid-template-columns:1fr 1fr; } }
     @media (max-width:620px){ .pro-footer .wrap{ grid-template-columns:1fr; } }
+    @media (max-width: 600px) {
+  .btn-main,
+  .cta-phone {
+    font-size: 0.95rem;
+    padding: 10px 14px;
+  }
+
+  .hero-left h1 {
+    font-size: 1.45rem;
+  }
+
+  .hero-left img {
+    height: 140px;
+  }
+}
   </style>
 </head>
 
@@ -601,45 +616,45 @@
 </section>
 
 <script>
-(function () {
-  const form = document.getElementById('callbackForm');
-  if (!form) return;
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const name = document.getElementById('cbName').value.trim();
-    const phone = document.getElementById('cbPhone').value.trim();
-    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-    /* 📱 MOBILE → SMS */
-    if (isMobile) {
-      let message = 'Bonjour MH SERVICE, je souhaite être rappelé.';
-      if (name) message += ' Nom : ' + name + '.';
-      if (phone) message += ' Téléphone : ' + phone + '.';
-
-      // ✅ NUMÉRO + MESSAGE
+  (function () {
+    const form = document.getElementById('callbackForm');
+    if (!form) return;
+  
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+  
+      const name = document.getElementById('cbName').value.trim();
+      const phone = document.getElementById('cbPhone').value.trim();
+      const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  
+      /* 📱 MOBILE → SMS */
+      if (isMobile) {
+        let message = 'Bonjour MH SERVICE, je souhaite être rappelé.';
+        if (name) message += ' Nom : ' + name + '.';
+        if (phone) message += ' Téléphone : ' + phone + '.';
+  
+        // ✅ NUMÉRO + MESSAGE
+        window.location.href =
+          'sms:0749556995?&body=' + encodeURIComponent(message);
+        return;
+      }
+  
+      /* 💻 PC → EMAIL */
+      let body = 'Bonjour MH SERVICE,\n\nJe souhaite être rappelé.\n';
+      if (name) body += 'Nom : ' + name + '\n';
+      if (phone) body += 'Téléphone : ' + phone + '\n';
+      body += '\nMerci.';
+  
       window.location.href =
-        'sms:0749556995?&body=' + encodeURIComponent(message);
-      return;
-    }
-
-    /* 💻 PC → EMAIL */
-    let body = 'Bonjour MH SERVICE,\n\nJe souhaite être rappelé.\n';
-    if (name) body += 'Nom : ' + name + '\n';
-    if (phone) body += 'Téléphone : ' + phone + '\n';
-    body += '\nMerci.';
-
-    window.location.href =
-      'mailto:mh.servicedepannage@gmail.com?subject=' +
-      encodeURIComponent('Demande de rappel – MH SERVICE') +
-      '&body=' +
-      encodeURIComponent(body);
-  });
-})();
-</script>
-
-
+        'mailto:mh.servicedepannage@gmail.com?subject=' +
+        encodeURIComponent('Demande de rappel – MH SERVICE') +
+        '&body=' +
+        encodeURIComponent(body);
+    });
+  })();
+  </script>
+  
+  
 
 </body>
 </html>
