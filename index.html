@@ -601,43 +601,44 @@
 </section>
 
 <script>
-  (function () {
-    const form = document.getElementById('callbackForm');
-    if (!form) return;
-  
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-  
-      const name = document.getElementById('cbName').value.trim();
-      const phone = document.getElementById('cbPhone').value.trim();
-  
-      const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-  
-      /* 📱 SUR MOBILE → SMS */
-      if (isMobile) {
-        let message = 'Bonjour MH SERVICE, je souhaite être rappelé.';
-        if (name) message += ' Nom : ' + name + '.';
-        if (phone) message += ' Téléphone : ' + phone + '.';
-  
-        window.location.href =
-          'sms:0749556995?body=' + encodeURIComponent(message);
-        return;
-      }
-  
-      /* 💻 SUR PC → EMAIL */
-      let body = 'Bonjour MH SERVICE,\n\nJe souhaite être rappelé.\n';
-      if (name) body += 'Nom : ' + name + '\n';
-      if (phone) body += 'Téléphone : ' + phone + '\n';
-      body += '\nMerci.';
-  
+(function () {
+  const form = document.getElementById('callbackForm');
+  if (!form) return;
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById('cbName').value.trim();
+    const phone = document.getElementById('cbPhone').value.trim();
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    /* 📱 MOBILE → SMS */
+    if (isMobile) {
+      let message = 'Bonjour MH SERVICE, je souhaite être rappelé.';
+      if (name) message += ' Nom : ' + name + '.';
+      if (phone) message += ' Téléphone : ' + phone + '.';
+
+      // 🔥 méthode la plus fiable
       window.location.href =
-        'mailto:mh.servicedepannage@gmail.com?subject=' +
-        encodeURIComponent('Demande de rappel – MH SERVICE') +
-        '&body=' +
-        encodeURIComponent(body);
-    });
-  })();
-  </script>
+        'sms:?&body=' + encodeURIComponent(message);
+      return;
+    }
+
+    /* 💻 PC → EMAIL */
+    let body = 'Bonjour MH SERVICE,\n\nJe souhaite être rappelé.\n';
+    if (name) body += 'Nom : ' + name + '\n';
+    if (phone) body += 'Téléphone : ' + phone + '\n';
+    body += '\nMerci.';
+
+    window.location.href =
+      'mailto:mh.servicedepannage@gmail.com?subject=' +
+      encodeURIComponent('Demande de rappel – MH SERVICE') +
+      '&body=' +
+      encodeURIComponent(body);
+  });
+})();
+</script>
+
 
 </body>
 </html>
