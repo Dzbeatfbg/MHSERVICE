@@ -609,6 +609,7 @@
         <input id="cbName" type="text" placeholder="Nom" autocomplete="name" />
         <input id="cbPhone" type="tel" placeholder="Téléphone" autocomplete="tel" />
         <button type="submit">RAPPELEZ-MOI</button>
+        <div class="mini">Sur mobile : appel direct. Sinon : email pré-rempli.</div>
       </form>
     </div>
 
@@ -653,7 +654,55 @@
     });
   })();
   </script>
-  
+  <script>
+    /* ===============================
+       ANTI-BOT MH SERVICE
+       Protection clics abusifs
+       =============================== */
+    
+    (function () {
+      const CLICK_LIMIT = 2;        // max clics
+      const TIME_WINDOW = 8000;     // 8 secondes
+      const BLOCK_TIME = 60000;     // blocage 1 min
+    
+      const now = Date.now();
+      const data = JSON.parse(localStorage.getItem('mh_antibot') || '{}');
+    
+      if (data.blockedUntil && now < data.blockedUntil) {
+        alert("Trop d'actions détectées. Veuillez patienter quelques secondes.");
+        document.body.innerHTML = "";
+        return;
+      }
+    
+      let clicks = data.clicks || [];
+    
+      function registerClick() {
+        const t = Date.now();
+        clicks = clicks.filter(c => t - c < TIME_WINDOW);
+        clicks.push(t);
+    
+        if (clicks.length > CLICK_LIMIT) {
+          localStorage.setItem('mh_antibot', JSON.stringify({
+            blockedUntil: t + BLOCK_TIME,
+            clicks: []
+          }));
+          alert("Action bloquée pour sécurité.");
+          location.reload();
+        } else {
+          localStorage.setItem('mh_antibot', JSON.stringify({
+            clicks: clicks
+          }));
+        }
+      }
+    
+      // 🔥 Protège liens téléphone & SMS
+      document.querySelectorAll('a[href^="tel:"], a[href^="sms:"]').forEach(link => {
+        link.addEventListener('click', registerClick);
+      });
+    
+    })();
+    </script>
+    
   
 
 </body>
