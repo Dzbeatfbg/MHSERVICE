@@ -250,7 +250,29 @@
 }
   </style>
 </head>
-
+<script>
+  /* ===============================
+     MENU MOBILE TOGGLE
+  =============================== */
+  document.querySelectorAll('.has-sub > a').forEach(link => {
+    link.addEventListener('click', function(e){
+      if (window.innerWidth <= 800) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('open');
+      }
+    });
+  });
+  
+  document.querySelectorAll('.has-sub-sub > a').forEach(link => {
+    link.addEventListener('click', function(e){
+      if (window.innerWidth <= 800) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('open');
+      }
+    });
+  });
+  </script>
+  
 <body>
 
   <header class="top-header">
@@ -667,6 +689,62 @@
   .has-sub > a{
     font-weight:800;
   }
+}
+/* ===============================
+   MENU MOBILE OPTIMISÉ
+=============================== */
+@media(max-width:800px){
+
+.main-menu{
+  padding:12px;
+}
+
+.menu-root{
+  flex-direction:column;
+  align-items:flex-start;
+  gap:0;
+}
+
+.menu-root > li{
+  width:100%;
+  border-bottom:1px solid #e6ebf2;
+}
+
+.menu-root > li > a{
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+  padding:12px 6px;
+  font-size:1rem;
+}
+
+/* Sous-menus fermés par défaut */
+.submenu,
+.submenu-right{
+  display:none;
+  position:static;
+  opacity:1;
+  visibility:visible;
+  transform:none;
+  box-shadow:none;
+  margin:0;
+  padding:6px 0 6px 12px;
+  border-left:2px solid #e3ecf7;
+}
+
+/* Quand ouvert */
+.has-sub.open > .submenu{
+  display:block;
+}
+
+.has-sub-sub.open > .submenu-right{
+  display:block;
+}
+
+.submenu li a{
+  padding:10px 6px;
+  font-size:.95rem;
+}
 }
 
 </style>
