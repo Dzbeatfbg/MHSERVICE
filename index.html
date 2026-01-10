@@ -1,1138 +1,937 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="google-site-verification" content="seNw_VaGQ-1igyXoWQhLbfF2vbo87vt4x0iYBOTw1DU" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="format-detection" content="telephone=yes" />
+  <meta name="robots" content="index,follow" />
 
   <title>Plomberie, Assainissement, Électricité, Chauffage – Urgence 24h/24 Île-de-France | MH SERVICE</title>
-  <meta name="description" content="MH SERVICE intervient en urgence 24h/24 et 7j/7 en Île-de-France pour vos problèmes de plomberie, assainissement, électricité et chauffage. Appelez le 07 49 55 69 95.">
-  <meta name="keywords" content="plombier urgence 24h, plombier pas cher, plombier île-de-france, plombier paris, plombier 77, plombier 78, plombier 91, plombier 92, plombier 93, plombier 94, plombier 95, fuite d'eau urgence, réparation fuite, débouchage canalisation, débouchage wc, débouchage évier, curage canalisation, assainissement urgence, électricien urgence, électricien dépannage, panne électrique, disjoncteur qui saute, réparation tableau électrique, chauffagiste urgence, dépannage chaudière, réparation chauffage, chauffe-eau panne, ballon d'eau chaude panne, intervention rapide, dépannage 24h/24, dépannage 7j/7, artisan plombier, artisan électricien, artisan chauffagiste, dépannage maison, dépannage appartement, entreprise dépannage, service dépannage, MH SERVICE">
+  <meta name="description" content="MH SERVICE intervient en urgence 24h/24 et 7j/7 en Île-de-France : plomberie, assainissement, électricité, chauffage. Appel immédiat : 07 49 55 69 95." />
 
-  <!-- Données structurées (SEO) -->
+  <!-- Canonical (mets ton URL finale si tu en as une) -->
+  <!-- <link rel="canonical" href="https://www.tondomaine.fr/" /> -->
+
+  <!-- Open Graph (optionnel mais propre pour partage) -->
+  <meta property="og:title" content="MH SERVICE – Urgence 24h/24 Île-de-France" />
+  <meta property="og:description" content="Plomberie, assainissement, électricité, chauffage. Intervention rapide 24h/24 – 7j/7." />
+  <meta property="og:type" content="website" />
+
+  <!-- Données structurées (LocalBusiness + FAQ) -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "name": "MH SERVICE",
-    "description": "Dépannage d'urgence en plomberie, assainissement, électricité et chauffage en Île-de-France, 24h/24 et 7j/7.",
-    "telephone": "+33749556995",
-    "email": "mh.servicedepannage@gmail.com",
-    "areaServed": { "@type": "AdministrativeArea", "name": "Île-de-France" },
-    "address": { "@type": "PostalAddress", "addressLocality": "Île-de-France", "addressCountry": "FR" }
+    "@context":"https://schema.org",
+    "@type":"HomeAndConstructionBusiness",
+    "name":"MH SERVICE",
+    "description":"Dépannage d'urgence en plomberie, assainissement, électricité et chauffage en Île-de-France, 24h/24 et 7j/7.",
+    "telephone":"+33749556995",
+    "email":"mh.servicedepannage@gmail.com",
+    "areaServed":{"@type":"AdministrativeArea","name":"Île-de-France"},
+    "address":{"@type":"PostalAddress","addressLocality":"Île-de-France","addressCountry":"FR"},
+    "url":""
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Intervenez-vous vraiment en urgence 24h/24 ?","acceptedAnswer":{"@type":"Answer","text":"Oui, nous intervenons en urgence selon disponibilité, 24h/24 et 7j/7 en Île-de-France."}},
+      {"@type":"Question","name":"Quels travaux faites-vous en plomberie et assainissement ?","acceptedAnswer":{"@type":"Answer","text":"Fuite d’eau, débouchage WC/évier/douche, curage canalisation, entretien évacuations, etc."}},
+      {"@type":"Question","name":"Vous faites aussi les pannes électriques ?","acceptedAnswer":{"@type":"Answer","text":"Oui : tableau, disjoncteur, prises, éclairage, mise en sécurité de l’installation."}},
+      {"@type":"Question","name":"Prenez-vous en charge chaudière / chauffage / chauffe-eau ?","acceptedAnswer":{"@type":"Answer","text":"Oui : diagnostic et dépannage chauffage, chaudière, radiateurs et chauffe-eau selon le cas."}}
+    ]
   }
   </script>
 
   <style>
-    .top-header {
-  background:#0057a3;
-  color:#fff;
-  padding:15px 15px 18px;
-}
-
-.header-inner {
-  max-width:1100px;
-  margin:0 auto;
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start;   /* ⬅️ ALIGNE À GAUCHE */
-  text-align:left;          /* ⬅️ TEXTE À GAUCHE */
-  gap:12px;
-}
-
-.header-info {
-  display:flex;
-  align-items:center;
-  gap:14px;
-}
-
-.logo {
-  height:90px;              /* ⬅️ LOGO PLUS GRAND */
-  background:#fff;
-  padding:6px;
-  border-radius:10px;
-  box-shadow:0 3px 8px rgba(0,0,0,.25);
-}
-
-.header-text {
-  display:flex;
-  flex-direction:column;
-  gap:3px;
-  font-size:.95rem;
-}
-
-/* 🔥 BOUTON */
-.header-cta {
-  margin-top:8px;
-}
-
-.call-btn {
-  display:inline-block;
-  background:#ffb300;
-  color:#222;
-  font-weight:900;
-  padding:12px 26px;
-  border-radius:999px;
-  text-decoration:none;
-  box-shadow:0 4px 10px rgba(0,0,0,.25);
-  font-size:1rem;
-}
-
-/* 📱 MOBILE */
-@media(max-width:600px){
-  .header-info{
-    flex-direction:row;   /* ⬅️ RESTE À GAUCHE MÊME SUR MOBILE */
-  }
-
-  .logo{
-    height:70px;
-  }
-
-  .call-btn{
-    font-size:.95rem;
-    padding:12px 20px;
-  }
-}
-
     :root{
       --primary:#0057a3;
       --secondary:#ffb300;
       --danger:#c62828;
       --bg:#f4f6f9;
       --text:#222;
+      --card:#fff;
+      --muted:#667085;
+      --shadow:0 6px 18px rgba(16,24,40,.10);
+      --radius:16px;
     }
     *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
     body{
       margin:0;
-      font-family: system-ui, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
       line-height:1.6;
     }
     a{ color:inherit; }
+    img{ max-width:100%; height:auto; display:block; }
+    .wrap{ max-width:1100px; margin:0 auto; padding:0 15px; }
 
-    /* HEADER */
-    header{ background: var(--primary); color:#fff; }
-    .top-bar{
-      max-width:1100px; margin:0 auto; padding:10px 15px;
-      display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;
+    /* Top header */
+    header{
+      background:var(--primary);
+      color:#fff;
     }
-    .top-bar-left{ display:flex; flex-wrap:wrap; gap:12px; align-items:center; font-size:.95rem; }
-    .top-bar-brand{ display:flex; align-items:center; gap:10px; }
-    .top-bar-logo{
-      height:110px; width:auto; border-radius:10px; background:#fff; padding:6px;
-      box-shadow:0 3px 8px rgba(0,0,0,.25);
+    .top{
+      padding:14px 0;
     }
-    .cta-phone{
-      background: var(--secondary);
-      padding:10px 18px; border-radius:999px; text-decoration:none; color:#222; font-weight:900;
-      display:inline-flex; align-items:center; gap:8px; box-shadow:0 3px 8px rgba(0,0,0,.25);
+    .top-inner{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      min-width:min(520px,100%);
+    }
+    .logo{
+      width:auto;
+      height:78px;
+      background:#fff;
+      padding:6px;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,.25);
+    }
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+      min-width:0;
+    }
+    .brand-text strong{ font-size:1.05rem; letter-spacing:.2px; }
+    .brand-text span{ font-size:.95rem; opacity:.95; }
+
+    .top-cta{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 16px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:900;
+      white-space:nowrap;
+    }
+    .pill-call{
+      background:var(--secondary);
+      color:#111;
+      box-shadow:0 4px 10px rgba(0,0,0,.25);
+    }
+    .pill-outline{
+      background:transparent;
+      border:1px solid rgba(255,255,255,.55);
+      color:#fff;
+    }
+
+    /* Nav */
+    nav{
+      background:#ffffff;
+      color:#0b2c52;
+      border-radius:14px;
+      box-shadow:var(--shadow);
+      margin:12px 0 18px;
+    }
+    .nav-inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:8px 10px;
+      gap:10px;
+    }
+    .menu-btn{
+      display:none;
+      border:0;
+      background:#f2f6ff;
+      color:#0b2c52;
+      font-weight:900;
+      padding:10px 12px;
+      border-radius:12px;
+      cursor:pointer;
+    }
+    .menu{
+      list-style:none;
+      margin:0;
+      padding:0;
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .menu a{
+      display:inline-block;
+      padding:8px 10px;
+      text-decoration:none;
+      font-weight:800;
+      font-size:.95rem;
+      border-radius:10px;
+    }
+    .menu a:hover{ background:#f2f6ff; color:var(--primary); }
+    .menu li{ position:relative; }
+
+    .submenu{
+      position:absolute;
+      top:100%;
+      left:0;
+      min-width:220px;
+      background:#fff;
+      list-style:none;
+      margin:6px 0 0;
+      padding:8px;
+      border-radius:14px;
+      box-shadow:var(--shadow);
+      display:none;
+      z-index:50;
+    }
+    .submenu a{
+      display:block;
+      padding:10px 10px;
+      font-size:.92rem;
+      font-weight:800;
+      white-space:nowrap;
+    }
+    .menu li:hover > .submenu{ display:block; }
+
+    .submenu-right{
+      left:100%;
+      top:0;
+      margin-left:6px;
+    }
+
+    /* Hero */
+    .hero{
+      display:grid;
+      grid-template-columns:2fr 1.05fr;
+      gap:18px;
+      margin:18px auto 24px;
+    }
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:18px;
+    }
+    .hero h1{
+      margin:10px 0 8px;
+      color:var(--primary);
+      font-size:1.8rem;
+      line-height:1.2;
+    }
+    .subtitle{
+      margin:0;
+      font-weight:650;
+    }
+    .badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin:12px 0 10px;
+    }
+    .badge{
+      padding:4px 10px;
+      border-radius:999px;
+      font-size:.82rem;
+      background:#e3f2fd;
+      color:#074a82;
+      font-weight:800;
+    }
+    .badge-danger{ background:var(--danger); color:#fff; }
+    .cta-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:12px;
+      align-items:center;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      text-decoration:none;
+      font-weight:900;
+      border-radius:999px;
+      padding:12px 18px;
+      box-shadow:0 4px 10px rgba(0,0,0,.18);
+      border:0;
+    }
+    .btn-main{ background:var(--secondary); color:#111; }
+    .btn-ghost{
+      background:#f5f9ff;
+      color:var(--primary);
+      border:1px solid #cfe3ff;
+      box-shadow:none;
+    }
+
+    /* Trust panel */
+    .trust h2{ margin:0 0 10px; font-size:1.15rem; color:#0b4fa3; }
+    .trust ul{ margin:0; padding:0; list-style:none; }
+    .trust li{
+      display:flex;
+      gap:12px;
+      padding:12px 0;
+      border-bottom:1px solid #e6ebf2;
+    }
+    .trust li:last-child{ border-bottom:0; }
+    .ico{
+      width:26px; height:26px; flex:0 0 26px;
+      stroke:#0b4fa3; fill:none; stroke-width:2;
+      margin-top:2px;
+    }
+    .trust strong{ display:block; font-size:.95rem; }
+    .trust span{ display:block; font-size:.9rem; color:#475467; line-height:1.35; }
+    .callbox{
+      margin-top:14px;
+      background:linear-gradient(135deg,#fff4cc,#ffe08b);
+      border-radius:999px;
+      padding:12px;
+      text-align:center;
+      font-weight:950;
+      text-decoration:none;
+      display:block;
+      color:#111;
+      box-shadow:0 6px 16px rgba(0,0,0,.15);
+    }
+    .callbox small{ display:block; font-weight:800; opacity:.9; }
+
+    /* Sections */
+    main{ padding-bottom:92px; }
+    section.card{ margin-bottom:18px; }
+    section h2{
+      margin:0 0 10px;
+      font-size:1.45rem;
+      color:var(--primary);
+    }
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:14px;
+      margin-bottom:18px;
+    }
+    .img-tile{
+      height:210px;
+      border-radius:14px;
+      overflow:hidden;
+      position:relative;
+      box-shadow:0 10px 24px rgba(0,0,0,.15);
+      background:#0b2c52;
+    }
+    .img-tile::before{
+      content:"";
+      position:absolute; inset:0;
+      background:rgba(0,0,0,.42);
+    }
+    .img-tile span{
+      position:absolute;
+      left:14px; right:14px; bottom:14px;
+      color:#fff;
+      font-weight:950;
+      font-size:1.05rem;
+      z-index:1;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:10px;
+    }
+    .service{
+      background:#fafbff;
+      border:1px solid #e1e5ee;
+      border-radius:14px;
+      padding:14px;
+    }
+    .service h3{ margin:0 0 8px; font-size:1.05rem; color:#333; }
+    .service ul{ margin:0; padding-left:18px; }
+
+    /* FAQ */
+    .faq details{
+      border:1px solid #e1e5ee;
+      border-radius:14px;
+      padding:10px 12px;
+      margin-bottom:10px;
+      background:#fafbff;
+    }
+    .faq summary{
+      cursor:pointer;
+      font-weight:950;
+      list-style:none;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .faq summary::-webkit-details-marker{ display:none; }
+    .faq summary::after{ content:"+"; font-size:1.2rem; font-weight:950; color:var(--primary); }
+    .faq details[open] summary::after{ content:"−"; }
+    .faq p{ margin:10px 0 0; font-size:.95rem; }
+
+    /* Contact */
+    .contact{
+      display:grid;
+      grid-template-columns:1.2fr 1fr;
+      gap:14px;
+    }
+    .box{
+      background:#fafbff;
+      border:1px solid #e1e5ee;
+      border-radius:14px;
+      padding:14px;
+    }
+    .box a{ color:var(--primary); text-decoration:none; font-weight:950; }
+
+    /* Sticky call (mobile-first conversion) */
+    .sticky{
+      position:fixed;
+      left:0; right:0; bottom:0;
+      background:rgba(255,179,0,.96);
+      backdrop-filter:saturate(120%) blur(6px);
+      border-top:1px solid rgba(0,0,0,.08);
+      z-index:999;
+      padding:10px 12px;
+    }
+    .sticky-inner{
+      max-width:1100px;
+      margin:0 auto;
+      display:flex;
+      gap:10px;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 3px;
+    }
+    .sticky strong{ font-weight:1000; }
+    .sticky a{
+      background:#111;
+      color:#fff;
+      text-decoration:none;
+      font-weight:1000;
+      padding:10px 14px;
+      border-radius:999px;
+      box-shadow:0 6px 16px rgba(0,0,0,.20);
       white-space:nowrap;
     }
 
-    /* HERO */
-    .hero{
-      max-width:1100px; margin:15px auto 25px; padding:18px 15px;
-      display:grid; grid-template-columns:2fr 1.2fr; gap:20px;
-    }
-    @media (max-width:900px){ .hero{ grid-template-columns:1fr; } }
-    .hero-left,.hero-right{
-      background:#fff; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,.05); padding:18px;
-    }
-    .hero-left img{ height:180px; width:auto; margin-bottom:12px; }
-    .hero-left h1{ margin:0 0 10px 0; color:var(--primary); font-size:1.9rem; }
-    .hero-subtitle{ font-weight:650; margin-bottom:10px; }
-    .hero-badges{ display:flex; flex-wrap:wrap; gap:8px; margin:10px 0 12px; }
-    .badge{ padding:3px 9px; border-radius:999px; font-size:.82rem; background:#e3f2fd; color:#074a82; }
-    .badge-urgence{ background:var(--danger); color:#fff; }
-    .hero-cta{ display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
-    .btn-main{
-      background:var(--secondary); border-radius:999px; padding:11px 22px; text-decoration:none;
-      font-weight:900; color:#222; box-shadow:0 3px 8px rgba(0,0,0,.25);
-      display:inline-flex; align-items:center; gap:8px;
-    }
-    .btn-secondary-outline{
-      border-radius:999px; padding:11px 18px; text-decoration:none; border:1px solid var(--primary);
-      color:var(--primary); font-weight:900; background:#f5f9ff;
-      display:inline-flex; align-items:center; gap:6px;
+    /* Footer */
+    footer{
+      text-align:center;
+      font-size:.85rem;
+      color:#667085;
+      padding:16px 0 120px;
     }
 
-    .hero-right h2{ margin:0 0 8px 0; font-size:1.2rem; }
-    .hero-right ul{ margin:0; padding-left:18px; font-size:.95rem; }
-
-    .city-card{ margin-top:14px; border:1px solid #d1e3ff; background:#f7faff; border-radius:12px; padding:14px; }
-    .city-card-title{ font-weight:900; color:var(--primary); margin-bottom:10px; }
-    .city-card-grid{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }
-    .city-pill{ background:#fff; border:1px solid #e1e5ee; border-radius:999px; padding:6px 10px; font-size:.9rem; }
-    .city-card-foot{ margin-top:10px; font-size:.92rem; font-weight:900; }
-    .city-card-foot a{ color:var(--primary); text-decoration:none; }
-
-    /* MAIN */
-    main{ max-width:1100px; margin:0 auto 90px; padding:0 15px; }
-    section{ margin-bottom:25px; background:#fff; border-radius:12px; padding:18px 15px; box-shadow:0 3px 8px rgba(0,0,0,.04); }
-    h2{ margin:0 0 10px 0; font-size:1.55rem; color:var(--primary); }
-    h3{ margin:12px 0 6px 0; font-size:1.1rem; color:#333; }
-
-    .services-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:15px; margin-top:10px; }
-    .service-card{ border:1px solid #e1e5ee; border-radius:12px; padding:14px; background:#fafbff; }
-    .service-card ul{ margin:8px 0 0; padding-left:18px; }
-
-    .zones{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
-    @media (max-width:700px){ .zones{ grid-template-columns:1fr; } }
-
-    /* FAQ */
-    .faq-accordion details{
-      border:1px solid #e1e5ee; border-radius:12px; padding:10px 12px; margin-bottom:10px; background:#fafbff;
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{ grid-template-columns:1fr; }
+      .grid-3{ grid-template-columns:1fr; }
+      .contact{ grid-template-columns:1fr; }
+      .logo{ height:68px; }
     }
-    .faq-accordion summary{
-      cursor:pointer; font-weight:900; list-style:none;
-      display:flex; justify-content:space-between; align-items:center;
+    @media (max-width:820px){
+      .menu-btn{ display:inline-flex; }
+      .menu{ display:none; flex-direction:column; align-items:flex-start; width:100%; }
+      .menu.open{ display:flex; }
+      .menu li{ width:100%; }
+      .submenu{
+        position:static;
+        margin:0;
+        box-shadow:none;
+        display:none;
+        padding:6px 0 6px 10px;
+        border-radius:0;
+      }
+      .menu li.open > .submenu{ display:block; }
     }
-    .faq-accordion summary::-webkit-details-marker{ display:none; }
-    .faq-accordion summary::after{ content:"+"; font-size:1.2rem; font-weight:900; color:var(--primary); }
-    .faq-accordion details[open] summary::after{ content:"−"; }
-    .faq-content{ padding-top:8px; font-size:.95rem; }
-
-    /* CONTACT */
-    .contact-block{ display:grid; grid-template-columns:1.4fr 1fr; gap:15px; align-items:start; }
-    @media (max-width:900px){ .contact-block{ grid-template-columns:1fr; } }
-    .bloc-contact,.form-rappel{ border:1px solid #e1e5ee; border-radius:12px; padding:14px; background:#fafbff; }
-    .form-rappel a{ color:var(--primary); text-decoration:none; font-weight:900; }
-
-    /* Sticky call */
-    .sticky-call{ display:none; position:fixed; bottom:10px; left:50%; transform:translateX(-50%); z-index:999; }
-    .sticky-call a{
-      background:var(--secondary); padding:10px 20px; border-radius:999px; text-decoration:none; color:#222; font-weight:900;
-      box-shadow:0 4px 10px rgba(0,0,0,.3); display:inline-flex; gap:8px; align-items:center;
+    @media (max-width:520px){
+      .hero h1{ font-size:1.45rem; }
+      .pill{ padding:10px 14px; font-size:.95rem; }
+      .btn{ width:100%; }
+      .sticky-inner{ flex-direction:column; align-items:stretch; }
+      .sticky a{ text-align:center; }
     }
-    @media (max-width:700px){ .sticky-call{ display:block; } }
-
-    footer{ text-align:center; font-size:.85rem; color:#666; padding:12px; }
-
-    /* Footer pro style Chevalier */
-    .pro-footer{ background:#555b63; color:#fff; padding:34px 15px; margin-top:10px; }
-    .pro-footer .wrap{
-      max-width:1100px; margin:0 auto;
-      display:grid; grid-template-columns:1.2fr 1fr 1fr 1fr; gap:22px; align-items:start;
-    }
-    .pro-footer h3{ margin:0 0 10px 0; letter-spacing:.5px; font-size:1.05rem; }
-    .pro-footer p,.pro-footer a,.pro-footer li{ font-size:.95rem; line-height:1.55; }
-    .pro-footer a{ color:#fff; text-decoration:none; }
-    .pro-footer a:hover{ text-decoration:underline; }
-    .pro-footer .contact-line{ display:flex; gap:10px; align-items:flex-start; margin:8px 0; }
-    .pro-footer .ico{ width:18px; height:18px; flex:0 0 18px; opacity:.95; margin-top:2px; }
-    .pro-footer ul{ list-style:none; padding:0; margin:0; }
-    .pro-footer li{ margin:8px 0; }
-    .pro-footer .callbox input{ width:100%; padding:10px; border:none; border-radius:10px; margin-bottom:10px; }
-    .pro-footer .callbox button{ width:100%; padding:11px 12px; background:#6ec6f1; border:none; border-radius:10px; font-weight:900; cursor:pointer; }
-    .pro-footer .callbox button:hover{ filter:brightness(.95); }
-    .pro-footer .mini{ opacity:.9; font-size:.85rem; margin-top:8px; }
-    .footer-brand{ display:flex; align-items:center; gap:10px; margin-bottom:8px; }
-    .footer-brand img{ height:56px; width:auto; border-radius:10px; background:#fff; padding:6px; }
-
-    @media (max-width:900px){ .pro-footer .wrap{ grid-template-columns:1fr 1fr; } }
-    @media (max-width:620px){ .pro-footer .wrap{ grid-template-columns:1fr; } }
-    @media (max-width: 600px) {
-  .btn-main,
-  .cta-phone {
-    font-size: 0.95rem;
-    padding: 10px 14px;
-  }
-
-  .hero-left h1 {
-    font-size: 1.45rem;
-  }
-
-  .hero-left img {
-    height: 140px;
-  }
-  
-}
   </style>
+
+  <!-- ✅ Placeholders tracking (Google Ads / GA4)
+       - Colle ton tag Google Ads ici si besoin
+       - Et/ou gtag('event','conversion',...) sur clic call
+  -->
 </head>
-<script>
-  /* ===============================
-     MENU MOBILE TOGGLE
-  =============================== */
-  document.querySelectorAll('.has-sub > a').forEach(link => {
-    link.addEventListener('click', function(e){
-      if (window.innerWidth <= 800) {
-        e.preventDefault();
-        this.parentElement.classList.toggle('open');
-      }
-    });
-  });
-  
-  document.querySelectorAll('.has-sub-sub > a').forEach(link => {
-    link.addEventListener('click', function(e){
-      if (window.innerWidth <= 800) {
-        e.preventDefault();
-        this.parentElement.classList.toggle('open');
-      }
-    });
-  });
-  </script>
-  
+
 <body>
+  <header>
+    <div class="top">
+      <div class="wrap">
+        <div class="top-inner">
+          <div class="brand">
+            <img src="logo-mh.png" alt="MH SERVICE" class="logo" width="160" height="78" loading="eager" />
+            <div class="brand-text">
+              <strong>MH SERVICE</strong>
+              <span>📍 Île-de-France • ⏱ 24h/24 & 7j/7</span>
+              <span style="opacity:.95"> • Intervention rapide</span>
+            </div>
+          </div>
 
-  <header class="top-header">
-    <div class="header-inner">
-  
-      <!-- LOGO + TEXTE -->
-      <div class="header-info">
-        <img src="logo-mh.png" alt="MH SERVICE" class="logo">
-  
-        <div class="header-text">
-          <strong>MH SERVICE</strong>
-          <span>📍 Île-de-France • ⏱ 24h/24 & 7j/7</span>
+          <div class="top-cta" aria-label="Actions rapides">
+            <a class="pill pill-call js-call" href="tel:0749556995" aria-label="Appeler MH SERVICE">
+              📞 Appel immédiat — 07 49 55 69 95
+            </a>
+            <a class="pill pill-outline" href="#map">🗺️ Zone d’intervention</a>
+          </div>
         </div>
+
+        <nav aria-label="Navigation principale">
+          <div class="nav-inner">
+            <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="menuList">
+              ☰ Menu
+            </button>
+
+            <ul class="menu" id="menuList">
+              <li><a href="index.html">Accueil</a></li>
+
+              <li class="has-sub">
+                <a href="#" class="js-sub">Plomberie ▾</a>
+                <ul class="submenu">
+                  <li><a href="plomberie.html">Fuite d'eau</a></li>
+                  <li class="has-sub">
+                    <a href="#" class="js-sub">Ballon d'eau chaude ▸</a>
+                    <ul class="submenu submenu-right">
+                      <li><a href="ballon-ariston.html">ARISTON</a></li>
+                      <li><a href="ballon-atlantic.html">ATLANTIC</a></li>
+                      <li><a href="ballon-thermor.html">THERMOR</a></li>
+                      <li><a href="ballon-fleck.html">FLECK</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="plomberie.html">Chauffe-eau</a></li>
+                  <li><a href="plomberie.html">Sanibroyeur</a></li>
+                </ul>
+              </li>
+
+              <li class="has-sub">
+                <a href="#" class="js-sub">Assainissement ▾</a>
+                <ul class="submenu">
+                  <li><a href="assainissement.html">Curage canalisation</a></li>
+                  <li><a href="assainissement.html">Pompage fosse septique</a></li>
+                  <li><a href="assainissement.html">Bac à graisse</a></li>
+                  <li><a href="assainissement.html">Assainissements</a></li>
+                </ul>
+              </li>
+
+              <li class="has-sub">
+                <a href="#" class="js-sub">Électricité ▾</a>
+                <ul class="submenu">
+                  <li><a href="electricite.html">Panne électrique</a></li>
+                  <li><a href="electricite.html">Tableau / Disjoncteur</a></li>
+                  <li><a href="electricite.html">Prises / Éclairage</a></li>
+                </ul>
+              </li>
+
+              <li class="has-sub">
+                <a href="#" class="js-sub">Chauffagiste ▾</a>
+                <ul class="submenu">
+                  <li><a href="chauffage.html">Chaudière</a></li>
+                  <li><a href="chauffage.html">Radiateurs</a></li>
+                  <li><a href="chauffage.html">Chauffe-eau</a></li>
+                  <li class="has-sub">
+                    <a href="#" class="js-sub">Nos marques ▸</a>
+                    <ul class="submenu submenu-right">
+                      <li><a href="chauffage-frisquet.html">Frisquet</a></li>
+                      <li><a href="chauffage-elm-leblanc.html">ELM Leblanc</a></li>
+                      <li><a href="chauffage-chaffoteaux.html">Chaffoteaux</a></li>
+                      <li><a href="chauffage-chappee.html">Chappée</a></li>
+                      <li><a href="chauffage-de-dietrich.html">De Dietrich</a></li>
+                      <li><a href="chauffage-saunier-duval.html">Saunier Duval</a></li>
+                      <li><a href="chauffage-viessmann.html">Viessmann</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li><a href="urgence.html">Urgence 24h/24</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
       </div>
-  
-      <!-- 🔽 BOUTON SOUS LE TEXTE -->
-      <div class="header-cta">
-        <a href="tel:0749556995" class="call-btn">
-          📞 APPEL IMMÉDIAT – 07 49 55 69 95
-        </a>
-        <span> Intervention Rapide 7/7 & 24/24 </span>
-      </div>
-      
-<nav class="main-menu">
-  <ul class="menu-root">
-
-    <li><a href="index.html">Accueil</a></li>
-
-   <li class="has-sub">
-  <a href="javascript:void(0)">Plomberie ▾</a>
-  <ul class="submenu">
-
-    <li><a href="plomberie.html">Fuite d'eau</a></li>
-
-    <li class="has-sub-sub">
-      <a href="javascript:void(0)">Ballon d'eau chaude ▸</a>
-      <ul class="submenu submenu-right">
-        <li><a href="ballon-ariston.html">ARISTON</a></li>
-        <li><a href="ballon-atlantic.html">ATLANTIC</a></li>
-        <li><a href="ballon-thermor.html">THERMOR</a></li>
-        <li><a href="ballon-fleck.html">FLECK</a></li>
-      </ul>
-    </li>
-
-    <li><a href="plomberie.html">Chauffe-eau</a></li>
-    <li><a href="plomberie.html">Sanibroyeur</a></li>
-
-  </ul>
-</li>
-    
-
-    <li class="has-sub">
-      <a href="#">Assainissement ▾</a>
-      <ul class="submenu">
-        <li><a href="assainissement.html">Curage canalisation</a></li>
-        <li><a href="assainissement.html">Pompage fosse septique</a></li>
-        <li><a href="assainissement.html">Bac à graisse</a></li>
-        <li><a href="assainissement.html">Assainissements</a></li>
-      </ul>
-    </li>
-
-    <li class="has-sub">
-      <a href="#">Électricité ▾</a>
-      <ul class="submenu">
-        <li><a href="electricite.html">Panne électrique</a></li>
-        <li><a href="electricite.html">Tableau / Disjoncteur</a></li>
-        <li><a href="electricite.html">Prises / Éclairage</a></li>
-      </ul>
-    </li>
-
-    <li class="has-sub">
-      <a href="#">Chauffagiste ▾</a>
-      <ul class="submenu">
-    
-        <li><a href="chauffage.html">Chaudière</a></li>
-        <li><a href="chauffage.html">Radiateurs</a></li>
-        <li><a href="chauffage.html">Chauffe-eau</a></li>
-    
-        <!-- SOUS-MENU NIVEAU 2 -->
-        <li class="has-sub-sub">
-          <a href="#">Nos marques ▸</a>
-          <ul class="submenu submenu-right">
-            <li><a href="chauffage-frisquet.html">Frisquet</a></li>
-            <li><a href="chauffage-elm-leblanc.html">ELM Leblanc</a></li>
-            <li><a href="chauffage-chaffoteaux.html">Chaffoteaux</a></li>
-            <li><a href="chauffage-chappee.html">Chappée</a></li>
-            <li><a href="chauffage-de-dietrich.html">De Dietrich</a></li>
-            <li><a href="chauffage-saunier-duval.html">Saunier Duval</a></li>
-            <li><a href="chauffage-viessmann.html">Viessmann</a></li>
-          </ul>
-        </li>
-    
-      </ul>
-    </li>
-    
-
-    <li><a href="urgence.html">Urgence 24h/24</a></li>
-    <li><a href="contact.html">Contact</a></li>
-
-  </ul>
-</nav>
-
-  
     </div>
   </header>
-  
 
-<section class="hero">
-  <article class="hero-left">
-    <img src="logo-mh.png" alt="MH SERVICE Logo" />
-
-    <h1>Plombier Urgence 24h/24 en Île-de-France Débouchage, Fuite d’eau, Électricité & Chauffage</h1>
-
-    <p class="hero-subtitle">
-      Besoin d’un <strong>plombier en urgence</strong>, d’un <strong>électricien de dépannage</strong> ou d’un
-      <strong>chauffagiste disponible 24h/24</strong> ? 
-      <strong>MH SERVICE</strong> intervient rapidement :
-      fuite d’eau, canalisation bouchée, panne électrique, chaudière en panne, chauffe-eau HS.
-      <strong>Intervention dès 49€ en moins de 30 minutes</strong>.
-    </p>
-
-    <div class="hero-badges">
-      <span class="badge">Plombier urgence 24h/24</span>
-      <span class="badge">Débouchage rapide</span>
-      <span class="badge">Fuite d’eau immédiate</span>
-      <span class="badge">Électricien urgence</span>
-      <span class="badge">Chauffagiste urgence</span>
-      <span class="badge">Île-de-France</span>
-      <span class="badge badge-urgence">Intervention express</span>
-    </div>
-
-    <div class="hero-cta">
-      <a class="btn-main" href="tel:0749556995">📞 Appeler maintenant – 07 49 55 69 95</a>
-      <a class="btn-secondary-outline" href="#map">🗺️ Voir la carte d’intervention</a>
-    </div>
-  </article>
-
-  <aside class="hero-right">
-    <h2>Interventions d'urgence</h2>
-    <ul>
-      <li>💧 Fuite d’eau, canalisation bouchée</li>
-      <li>⚡ Panne électrique, disjoncteur</li>
-      <li>🔥 Chauffage / chaudière en panne</li>
-      <li>🚿 Chauffe-eau, pression, robinetterie</li>
-    </ul>
-    <p style="margin-bottom:8px;font-weight:600;">
-        <p>Intervention rapide dans toute l’Île-de-France.</p>
-
-        <div class="zone-visual">
-        
-          <!-- Version optimisée Google Ads – conversion appels mobile-first -->
-
-<!-- ⚠️ IMPORTANT : Le contenu existant est conservé, seules les sections zones ont été remplacées par un bloc conversion -->
-
-<!-- Le reste du fichier (header, hero, services, carte My Maps, FAQ, footer, scripts SMS) reste IDENTIQUE -->
-
-<aside class="trust-panel">
-  <h3>Dépannage immédiat & prise en charge rapide</h3>
-
-  <ul class="trust-list">
-    <li>
-      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-      <div>
-        <strong>Réponse immédiate</strong>
-        <span>Notre ligne d'urgence est disponible 24H/24 - 7J/7</span>
-      </div>
-    </li>
-
-    <li>
-      <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3 5.1"/></svg>
-      <div>
-        <strong>Contact direct</strong>
-        <span>Nos techniciens interviennent en moins de 30 min et vous garantissent des travaux de qualité</span>
-      </div>
-    </li>
-
-    <li>
-      <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="14"/><path d="M6 7V3h12v4"/></svg>
-      <div>
-        <strong>Techniciens équipés</strong>
-        <span>Intervention efficace dès l’arrivée</span>
-      </div>
-    </li>
-
-    <li>
-      <svg viewBox="0 0 24 24"><path d="M12 1v22"/><path d="M5 6h9a4 4 0 0 1 0 8H7"/></svg>
-      <div>
-        <strong>Travaux GARANTIE </strong>
-        <span>Nous sommes agrée par de nombreuse assurances partenaires</span>
-      </div>
-    </li>
-  </ul>
-
-  <a href="tel:0749556995" class="call-main">
-    Appeler maintenant
-    <span>07 49 55 69 95</span>
-  </a>
-</aside>
-
-
-<style>
-.intervention-highlight{margin:20px 0;padding:18px;border-radius:16px;background:linear-gradient(135deg,#f7faff,#e9f1ff);border:1px solid #d1e3ff}
-.intervention-highlight h3{margin:0 0 14px 0;color:#0057a3;font-size:1.2rem;text-align:center}
-.intervention-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-@media(max-width:600px){.intervention-grid{grid-template-columns:1fr}}
-.intervention-item{display:flex;gap:12px;align-items:flex-start;background:#fff;padding:12px 14px;border-radius:14px;box-shadow:0 4px 10px rgba(0,0,0,.1)}
-.intervention-ico{font-size:1.6rem;line-height:1}
-.intervention-item strong{display:block;font-size:1rem}
-.intervention-item span{font-size:.88rem;opacity:.85}
-.intervention-cta{margin-top:16px;text-align:center;font-weight:900}
-.intervention-cta a{color:#0057a3;text-decoration:none;font-size:1.1rem}
-.trust-panel{
-  background:#f6f9fc;
-  border:1px solid #e1e7ef;
-  border-radius:14px;
-  padding:20px;
-}
-
-.trust-panel h3{
-  margin:0 0 14px;
-  font-size:1.15rem;
-  color:#0b4fa3;
-  text-align:center;
-}
-
-.trust-list{
-  list-style:none;
-  padding:0;
-  margin:0;
-}
-
-.trust-list li{
-  display:flex;
-  gap:12px;
-  padding:12px 0;
-  border-bottom:1px solid #e6ebf2;
-}
-
-.trust-list li:last-child{
-  border-bottom:none;
-}
-
-.trust-list svg{
-  width:26px;
-  height:26px;
-  stroke:#0b4fa3;
-  fill:none;
-  stroke-width:2;
-  flex-shrink:0;
-}
-
-.trust-list strong{
-  display:block;
-  font-size:.95rem;
-  color:#111;
-}
-
-.trust-list span{
-  font-size:.9rem;
-  color:#555;
-  line-height:1.4;
-}
-
-.call-main{
-  display:block;
-  margin-top:18px;
-  text-align:center;
-  background:#ffb300;
-  padding:14px;
-  border-radius:999px;
-  text-decoration:none;
-  color:#000;
-  font-weight:900;
-  box-shadow:0 4px 10px rgba(0,0,0,.2);
-}
-
-.call-main span{
-  display:block;
-  font-size:1.1rem;
-}
-/* ===============================
-   MENU DÉROULANT MH SERVICE
-   =============================== */
-
-   .main-menu{
-  margin-top:14px;
-  background:#ffffff;
-  border-radius:10px;
-  padding:10px 20px;
-  box-shadow:0 3px 10px rgba(0,0,0,.15);
-}
-
-.menu-root{
-  list-style:none;
-  padding:0;
-  margin:0;
-  display:flex;
-  gap:22px;
-  align-items:center;
-}
-
-.menu-root > li{
-  position:relative;
-}
-
-.menu-root > li > a{
-  text-decoration:none;
-  font-weight:700;
-  color:#0b2c52; /* bleu nuit */
-  font-size:0.95rem;
-  padding:6px 4px;
-  display:inline-block;
-}
-
-.menu-root > li > a:hover{
-  color:#0057a3;
-}
-
-/* --- Sous-menu --- */
-.submenu{
-  position:absolute;
-  top:100%;
-  left:0;
-  background:#ffffff;
-  min-width:200px;
-  border-radius:8px;
-  padding:6px 0;
-  box-shadow:0 6px 18px rgba(0,0,0,.15);
-  list-style:none;
-  opacity:0;
-  visibility:hidden;
-  transform:translateY(8px);
-  transition:all .2s ease;
-  z-index:999;
-}
-
-.submenu li a{
-  display:block;
-  padding:8px 14px;
-  text-decoration:none;
-  font-size:.9rem;
-  color:#0b2c52;
-  white-space:nowrap;
-}
-
-.submenu li a:hover{
-  background:#f2f6ff;
-  color:#0057a3;
-}
-/* ===============================
-   SOUS-MENU NIVEAU 2 (MARQUES)
-   =============================== */
-
-   .has-sub-sub{
-  position:relative;
-}
-
-.submenu-right{
-  top:0;
-  left:100%;
-  margin-left:4px;
-}
-
-/* Apparition au survol */
-.has-sub-sub:hover > .submenu-right{
-  opacity:1;
-  visibility:visible;
-  transform:translateY(0);
-}
-
-/* Icône visuelle */
-.has-sub-sub > a{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-/* 📱 MOBILE : tout s'affiche en colonne */
-@media(max-width:800px){
-  .submenu-right{
-    position:static;
-    opacity:1;
-    visibility:visible;
-    transform:none;
-    box-shadow:none;
-    margin-left:0;
-    padding-left:10px;
-  }
-}
-
-/* --- Affichage au survol --- */
-.has-sub:hover .submenu{
-  opacity:1;
-  visibility:visible;
-  transform:translateY(0);
-}
-
-/* 📱 MOBILE */
-@media(max-width:800px){
-  .menu-root{
-    flex-wrap:wrap;
-    gap:12px;
-  }
-
-  .submenu{
-    position:static;
-    opacity:1;
-    visibility:visible;
-    transform:none;
-    box-shadow:none;
-    padding-left:10px;
-  }
-
-  .has-sub > a{
-    font-weight:800;
-  }
-}
-/* ===============================
-   MENU MOBILE OPTIMISÉ
-=============================== */
-@media(max-width:800px){
-
-.main-menu{
-  padding:12px;
-}
-
-.menu-root{
-  flex-direction:column;
-  align-items:flex-start;
-  gap:0;
-}
-
-.menu-root > li{
-  width:100%;
-  border-bottom:1px solid #e6ebf2;
-}
-
-.menu-root > li > a{
-  display:flex;
-  justify-content:space-between;
-  width:100%;
-  padding:12px 6px;
-  font-size:1rem;
-}
-
-/* Sous-menus fermés par défaut */
-.submenu,
-.submenu-right{
-  display:none;
-  position:static;
-  opacity:1;
-  visibility:visible;
-  transform:none;
-  box-shadow:none;
-  margin:0;
-  padding:6px 0 6px 12px;
-  border-left:2px solid #e3ecf7;
-}
-
-/* Quand ouvert */
-.has-sub.open > .submenu{
-  display:block;
-}
-
-.has-sub-sub.open > .submenu-right{
-  display:block;
-}
-
-.submenu li a{
-  padding:10px 6px;
-  font-size:.95rem;
-}
-}
-
-</style>
-
-  </aside>
-</section>
-
-<main>
-
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:15px;margin-bottom:20px;">
-
-        <div style="
-          background:url('assainissement.jpg') center/cover no-repeat;
-          height:220px;
-          border-radius:14px;
-          box-shadow:0 6px 15px rgba(0,0,0,.2);
-          position:relative;">
-          <div style="
-            position:absolute;inset:0;
-            background:rgba(0,0,0,.45);
-            border-radius:14px;
-            display:flex;
-            align-items:flex-end;
-            padding:14px;
-            color:#fff;
-            font-weight:900;
-            font-size:1.1rem;">
-            Assainissement & débouchage
-          </div>
-        </div>
-      
-        <div style="
-          background:url('electricite.jpg') center/cover no-repeat;
-          height:220px;
-          border-radius:14px;
-          box-shadow:0 6px 15px rgba(0,0,0,.2);
-          position:relative;">
-          <div style="
-            position:absolute;inset:0;
-            background:rgba(0,0,0,.45);
-            border-radius:14px;
-            display:flex;
-            align-items:flex-end;
-            padding:14px;
-            color:#fff;
-            font-weight:900;
-            font-size:1.1rem;">
-            Dépannage électricité
-          </div>
-        </div>
-      
-        <div style="
-          background:url('plombier.jpg') center/cover no-repeat;
-          height:220px;
-          border-radius:14px;
-          box-shadow:0 6px 15px rgba(0,0,0,.2);
-          position:relative;">
-          <div style="
-            position:absolute;inset:0;
-            background:rgba(0,0,0,.45);
-            border-radius:14px;
-            display:flex;
-            align-items:flex-end;
-            padding:14px;
-            color:#fff;
-            font-weight:900;
-            font-size:1.1rem;">
-            Plomberie & urgence fuite
-          </div>
-        </div>
-      
-      </div>
-      
-
-    <h2>Entreprise de dépannage urgence en Île-de-France</h2>
-    <p>
-      <strong>MH SERVICE</strong> intervient 24h/24 pour : <strong>plomberie</strong>, <strong>assainissement</strong>, <strong>électricité</strong> et <strong>chauffage</strong>.
-      Appelez maintenant pour un <strong>devis immédiat</strong> et une <strong>intervention rapide</strong> :
-      <a href="tel:0749556995"><strong>07 49 55 69 95</strong></a>.
-    </p>
-
-    <h2>Nos services</h2>
-    <div class="services-grid">
-      <article class="service-card">
-        <h3>Plomberie</h3>
-        <ul>
-          <li>Fuite d’eau (cuisine, salle de bain, WC)</li>
-          <li>Canalisations bouchées (WC, évier, douche)</li>
-          <li>Chauffe-eau / ballon d’eau chaude</li>
-          <li>Robinetterie, joints, remplacement</li>
-        </ul>
-      </article>
-
-      <article class="service-card">
-        <h3>Assainissement</h3>
-        <ul>
-          <li>Débouchage canalisation / colonne</li>
-          <li>Curage haute pression</li>
-          <li>Regards, collecteurs, descentes</li>
-          <li>Entretien évacuations</li>
-          <li>Pompage</li>
-          <li>Fosse sceptiques</li>
-          <li>Bac à Graisse</li>
-        </ul>
-      </article>
-
-      <article class="service-card">
-        <h3>Électricité</h3>
-        <ul>
-          <li>Coupure partielle ou totale</li>
-          <li>Tableau électrique, disjoncteur</li>
-          <li>Prises, interrupteurs, éclairage</li>
-          <li>Mise en sécurité</li>
-        </ul>
-      </article>
-
-      <article class="service-card">
-        <h3>Chauffage</h3>
-        <ul>
-          <li>Chaudière qui ne démarre plus</li>
-          <li>Radiateurs froids</li>
-          <li>Problème de pression</li>
-          <li>Dépannage chauffage</li>
-        </ul>
-      </article>
-    </div>
-  </section>
-
-  <section id="process">
-    <h2>Comment se déroule une intervention MH SERVICE ?</h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:15px;margin-top:10px;">
-      <div style="border-radius:12px;border:1px solid #e1e5ee;padding:12px;background:#fafbff;box-shadow:0 3px 8px rgba(0,0,0,.05);">
-        <div style="display:inline-block;width:30px;height:30px;border-radius:50%;background:var(--primary);color:#fff;text-align:center;line-height:30px;font-size:.95rem;margin-bottom:6px;font-weight:900;">1</div>
-        <strong>Appel & diagnostic</strong>
-        <p>Vous décrivez le souci, on cible l’intervention rapidement.</p>
-      </div>
-
-      <div style="border-radius:12px;border:1px solid #e1e5ee;padding:12px;background:#fafbff;box-shadow:0 3px 8px rgba(0,0,0,.05);">
-        <div style="display:inline-block;width:30px;height:30px;border-radius:50%;background:var(--primary);color:#fff;text-align:center;line-height:30px;font-size:.95rem;margin-bottom:6px;font-weight:900;">2</div>
-        <strong>Intervention sur place</strong>
-        <p>Diagnostic, sécurisation et réparation immédiate si possible.</p>
-      </div>
-
-      <div style="border-radius:12px;border:1px solid #e1e5ee;padding:12px;background:#fafbff;box-shadow:0 3px 8px rgba(0,0,0,.05);">
-        <div style="display:inline-block;width:30px;height:30px;border-radius:50%;background:var(--primary);color:#fff;text-align:center;line-height:30px;font-size:.95rem;margin-bottom:6px;font-weight:900;">3</div>
-        <strong>Contrôle & conseils</strong>
-        <p>Vérifications et conseils pour éviter que ça revienne.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="map">
-    <h2>Carte des interventions MH SERVICE</h2>
-    <p>Cliquez sur une ville pour voir nos informations.</p>
-
-    <iframe
-      src="https://www.google.com/maps/d/embed?mid=1D7Y3hX-qMfkiv1E8I9xENox2I0ln_hU&amp;ehbc=2E312F"
-      width="100%"
-      height="520"
-      style="border:0;border-radius:12px;box-shadow:0 3px 8px rgba(0,0,0,.15);"
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-    </div>
-  </section>
-
-  <section id="faq">
-    <h2>Questions fréquentes</h2>
-    <p style="margin-bottom:10px">Cliquez sur une question pour afficher la réponse.</p>
-
-    <div class="faq-accordion">
-      <details>
-        <summary>Intervenez-vous vraiment en urgence 24h/24 ?</summary>
-        <div class="faq-content">
-          <p>Oui, nous intervenons en urgence selon disponibilité, 24h/24 et 7j/7 en Île-de-France.</p>
-        </div>
-      </details>
-
-      <details>
-        <summary>Quels travaux faites-vous en plomberie et assainissement ?</summary>
-        <div class="faq-content">
-          <p>Fuite d’eau, débouchage WC/évier/douche, curage canalisation, entretien évacuations, etc.</p>
-        </div>
-      </details>
-
-      <details>
-        <summary>Vous faites aussi les pannes électriques ?</summary>
-        <div class="faq-content">
-          <p>Oui : tableau, disjoncteur, prises, éclairage, mise en sécurité de l’installation.</p>
-        </div>
-      </details>
-
-      <details>
-        <summary>Prenez-vous en charge chaudière / chauffage / chauffe-eau ?</summary>
-        <div class="faq-content">
-          <p>Oui : diagnostic et dépannage chauffage, chaudière, radiateurs et chauffe-eau selon le cas.</p>
-        </div>
-      </details>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact – Appelez maintenant</h2>
-    <p><strong>Pour une urgence, appelez :</strong> <a href="tel:0749556995"><strong>07 49 55 69 95</strong></a></p>
-
-    <div class="contact-block">
-      <div class="bloc-contact">
-        <p>📞 Téléphone : <strong><a href="tel:0749556995">07 49 55 69 95</a></strong></p>
-        <p>✉️ E-mail : <strong><a href="mailto:mh.servicedepannage@gmail.com">mh.servicedepannage@gmail.com</a></strong></p>
-        <p>📍 Zone : Île-de-France</p>
-      </div>
-
-      <aside class="form-rappel" aria-label="Contact téléphone">
-        <h3>Intervention immédiate</h3>
-        <p style="font-size:1.15rem;margin:0 0 8px 0;"><strong>📞 <a href="tel:0749556995">07 49 55 69 95</a></strong></p>
-        <p style="margin:0;">Disponible 24h/24 – 7j/7. Devis par téléphone.</p>
-      </aside>
-    </div>
-  </section>
-
-</main>
-
-<!-- Bandeau d'appel fixe -->
-<div style="position:fixed;bottom:0;left:0;width:100%;background:#ffb300;padding:10px 0;z-index:998;text-align:center;font-weight:900;">
-  📞 URGENCE DÉPANNAGE – <a href="tel:0749556995" style="color:#000;text-decoration:none;">APPELEZ 07 49 55 69 95</a>
-</div>
-
-<footer>
-  &copy; <span id="year"></span> MH SERVICE – Tous droits réservés.
-</footer>
-
-<div class="sticky-call">
-  <a href="tel:0749556995">📞 Appeler MH SERVICE – 07 49 55 69 95</a>
-</div>
-
-<!-- Footer gris type Chevalier -->
-<section class="pro-footer" aria-label="Informations MH SERVICE">
   <div class="wrap">
+    <section class="hero" aria-label="Présentation">
+      <article class="card">
+        <img src="logo-mh.png" alt="Logo MH SERVICE" width="240" height="180" loading="eager" />
 
-    <div>
-      <div class="footer-brand">
-        <img src="logo-mh.png" alt="Logo MH SERVICE" />
-        <h3 style="margin:0;">MH SERVICE</h3>
+        <h1>Plombier Urgence 24h/24 en Île-de-France — Débouchage, Fuite d’eau, Électricité & Chauffage</h1>
+
+        <p class="hero-subtitle">
+          Besoin d’un <strong>plombier en urgence</strong>, d’un <strong>électricien de dépannage</strong> ou d’un
+          <strong>chauffagiste disponible 24h/24</strong> ? 
+          <strong>MH SERVICE</strong> intervient rapidement :
+          fuite d’eau, canalisation bouchée, panne électrique, chaudière en panne, chauffe-eau HS.
+          <strong>Intervention dès 49€ en moins de 30 minutes</strong>.
+        </p>
+
+        <div class="badges" aria-label="Points forts">
+          <span class="badge">Plombier urgence 24h/24</span>
+          <span class="badge">Débouchage rapide</span>
+          <span class="badge">Fuite d’eau immédiate</span>
+          <span class="badge">Électricien urgence</span>
+          <span class="badge">Chauffagiste urgence</span>
+          <span class="badge">Île-de-France</span>
+          <span class="badge badge-danger">Intervention express</span>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn btn-main js-call" href="tel:0749556995">📞 Appeler maintenant — 07 49 55 69 95</a>
+          <a class="btn btn-ghost" href="#contact">📩 Être rappelé / contact</a>
+        </div>
+
+        <noscript>
+          <p style="margin-top:10px;font-weight:900;">
+            📞 Urgence : <a href="tel:0749556995">07 49 55 69 95</a>
+          </p>
+        </noscript>
+      </article>
+
+      <aside class="card trust" aria-label="Confiance & réassurance">
+        <h2>Dépannage immédiat & prise en charge rapide</h2>
+
+        <ul>
+          <li>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div>
+              <strong>Réponse immédiate</strong>
+              <span>Ligne d’urgence disponible 24H/24 — 7J/7</span>
+            </div>
+          </li>
+          <li>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3 5.1"/></svg>
+            <div>
+              <strong>Contact direct</strong>
+              <span>Nos techniciens interviennent en moins de 30 min et vous garantissent des travaux de qualité</span>
+            </div>
+          </li>
+          <li>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="14"/><path d="M6 7V3h12v4"/></svg>
+            <div>
+              <strong>Techniciens équipés</strong>
+              <span>Intervention efficace dès l’arrivée</span>
+            </div>
+          </li>
+          <li>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1v22"/><path d="M5 6h9a4 4 0 0 1 0 8H7"/></svg>
+            <div>
+              <strong>Travaux & garanties</strong>
+              <span>Conseils et contrôle après intervention. Nous sommes agrée par de nombreuse assurances partenaires</span>
+            </div>
+          </li>
+        </ul>
+
+        <a class="callbox js-call" href="tel:0749556995">
+          Appeler maintenant
+          <small>07 49 55 69 95</small>
+        </a>
+      </aside>
+    </section>
+
+    <main>
+      <div class="grid-3" aria-label="Services en images">
+        <div class="img-tile" style="background:url('assainissement.jpg') center/cover no-repeat;">
+          <span>Assainissement & débouchage</span>
+        </div>
+        <div class="img-tile" style="background:url('electricite.jpg') center/cover no-repeat;">
+          <span>Dépannage électricité</span>
+        </div>
+        <div class="img-tile" style="background:url('plombier.jpg') center/cover no-repeat;">
+          <span>Plomberie & urgence fuite</span>
+        </div>
       </div>
-      <p>
-        MH SERVICE est une societe basée en Ile-de-France,<strong>avec un réseau partenaire structuré composé de plus de 150 professionnels qualifiés, </strong>,offrant une réactivité maximale et un service de qualité 7j/7 et 24h/24. Intervention rapide et disponibilité 24h/24 – 7j/7
-        Intervention rapide et disponibilité <strong>24h/24 – 7j/7</strong>.
-      </p>
-      <p class="mini">📞 Pour une urgence : <a href="tel:0749556995"><strong>07 49 55 69 95</strong></a></p>
-    </div>
 
-    <div>
-      <h3>CONTACTEZ-NOUS</h3>
+      <section class="card" id="services">
+        <h2>Entreprise de dépannage urgence en Île-de-France</h2>
+        <p>
+          <strong>MH SERVICE</strong> intervient 24h/24 pour : <strong>plomberie</strong>, <strong>assainissement</strong>,
+          <strong>électricité</strong> et <strong>chauffage</strong>. Appelez maintenant pour un <strong>devis immédiat</strong> :
+          <a class="js-call" href="tel:0749556995"><strong>07 49 55 69 95</strong></a>.
+        </p>
 
-      <div class="contact-line">
-        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 3 5.18 2 2 0 0 1 5.11 3h3a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.5a2 2 0 0 1-.45 2.11L9.09 10.91a16 16 0 0 0 4 4l1.58-1.11a2 2 0 0 1 2.11-.45c.8.24 1.64.42 2.5.54A2 2 0 0 1 22 16.92z"/>
-        </svg>
-        <div><a href="tel:0749556995"><strong>07 49 55 69 95</strong></a><br><span class="mini">Urgence 24h/24 – 7j/7</span></div>
-      </div>
+        <h2>Nos services</h2>
+        <div class="services">
+          <article class="service">
+            <h3>Plomberie</h3>
+            <ul>
+              <li>Fuite d’eau (cuisine, salle de bain, WC)</li>
+              <li>Canalisations bouchées (WC, évier, douche)</li>
+              <li>Chauffe-eau / ballon d’eau chaude</li>
+              <li>Robinetterie, joints, remplacement</li>
+            </ul>
+          </article>
 
-      <div class="contact-line">
-        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M4 4h16v16H4z"></path><path d="M22 6l-10 7L2 6"></path>
-        </svg>
-        <div><a href="mailto:mh.servicedepannage@gmail.com">mh.servicedepannage@gmail.com</a></div>
-      </div>
+          <article class="service">
+            <h3>Assainissement</h3>
+            <ul>
+              <li>Débouchage canalisation / colonne</li>
+              <li>Curage haute pression</li>
+              <li>Regards, collecteurs, descentes</li>
+              <li>Entretien évacuations</li>
+              <li>Pompage</li>
+              <li>Fosse septique</li>
+              <li>Bac à graisse</li>
+            </ul>
+          </article>
 
-      <div class="contact-line">
-        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 0 1 18 0z"></path><path d="M12 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
-        </svg>
-        <div>Île-de-France</div>
-      </div>
-    </div>
+          <article class="service">
+            <h3>Électricité</h3>
+            <ul>
+              <li>Coupure partielle ou totale</li>
+              <li>Tableau électrique, disjoncteur</li>
+              <li>Prises, interrupteurs, éclairage</li>
+              <li>Mise en sécurité</li>
+            </ul>
+          </article>
 
-    <div>
-      <h3>MENU</h3>
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#process">Comment on intervient</a></li>
-        <li><a href="#map">Carte</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
+          <article class="service">
+            <h3>Chauffage</h3>
+            <ul>
+              <li>Chaudière qui ne démarre plus</li>
+              <li>Radiateurs froids</li>
+              <li>Problème de pression</li>
+              <li>Dépannage chauffage</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-    <div class="callbox">
-      <h3>FAITES-VOUS RAPPELER</h3>
-      <form id="callbackForm">
-        <input id="cbName" type="text" placeholder="Nom" autocomplete="name" />
-        <input id="cbPhone" type="tel" placeholder="Téléphone" autocomplete="tel" />
-        <button type="submit">RAPPELEZ-MOI</button>
-        <div class="mini">Sur mobile : appel direct. Sinon : email pré-rempli.</div>
-      </form>
-    </div>
+      <section id="process">
+        <h2>Comment se déroule une intervention MH SERVICE ?</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:15px;margin-top:10px;">
+          <div style="border-radius:12px;border:1px solid #e1e5ee;padding:12px;background:#fafbff;box-shadow:0 3px 8px rgba(0,0,0,.05);">
+            <div style="display:inline-block;width:30px;height:30px;border-radius:50%;background:var(--primary);color:#fff;text-align:center;line-height:30px;font-size:.95rem;margin-bottom:6px;font-weight:900;">1</div>
+            <strong>Appel & diagnostic</strong>
+            <p>Vous décrivez le souci, on cible l’intervention rapidement.</p>
+          </div>
+    
+          <div style="border-radius:12px;border:1px solid #e1e5ee;padding:12px;background:#fafbff;box-shadow:0 3px 8px rgba(0,0,0,.05);">
+            <div style="display:inline-block;width:30px;height:30px;border-radius:50%;background:var(--primary);color:#fff;text-align:center;line-height:30px;font-size:.95rem;margin-bottom:6px;font-weight:900;">2</div>
+            <strong>Intervention sur place</strong>
+            <p>Diagnostic, sécurisation et réparation immédiate si possible.</p>
+          </div>
+    
+          <div style="border-radius:12px;border:1px solid #e1e5ee;padding:12px;background:#fafbff;box-shadow:0 3px 8px rgba(0,0,0,.05);">
+            <div style="display:inline-block;width:30px;height:30px;border-radius:50%;background:var(--primary);color:#fff;text-align:center;line-height:30px;font-size:.95rem;margin-bottom:6px;font-weight:900;">3</div>
+            <strong>Contrôle & conseils</strong>
+            <p>Vérifications et conseils pour éviter que ça revienne.</p>
+          </div>
+        </div>
+      </section>
 
+      <section class="card" id="map">
+        <h2>Carte des interventions MH SERVICE</h2>
+        <p>Cliquez sur une ville pour voir nos informations.</p>
+
+        <iframe
+          title="Carte interventions MH SERVICE"
+          src="https://www.google.com/maps/d/embed?mid=1D7Y3hX-qMfkiv1E8I9xENox2I0ln_hU&amp;ehbc=2E312F"
+          width="100%"
+          height="520"
+          style="border:0;border-radius:14px;box-shadow:var(--shadow);"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </section>
+
+      <section class="card" id="faq">
+        <h2>Questions fréquentes</h2>
+        <p style="margin:0 0 10px;color:var(--muted);font-weight:650;">Cliquez sur une question pour afficher la réponse.</p>
+
+        <div class="faq">
+          <details>
+            <summary>Intervenez-vous vraiment en urgence 24h/24 ?</summary>
+            <p>Oui, nous intervenons en urgence selon disponibilité, 24h/24 et 7j/7 en Île-de-France.</p>
+          </details>
+          <details>
+            <summary>Quels travaux faites-vous en plomberie et assainissement ?</summary>
+            <p>Fuite d’eau, débouchage WC/évier/douche, curage canalisation, entretien évacuations, etc.</p>
+          </details>
+          <details>
+            <summary>Vous faites aussi les pannes électriques ?</summary>
+            <p>Oui : tableau, disjoncteur, prises, éclairage, mise en sécurité de l’installation.</p>
+          </details>
+          <details>
+            <summary>Prenez-vous en charge chaudière / chauffage / chauffe-eau ?</summary>
+            <p>Oui : diagnostic et dépannage chauffage, chaudière, radiateurs et chauffe-eau selon le cas.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact – Appelez maintenant</h2>
+        <p><strong>Pour une urgence, appelez :</strong> <a href="tel:0749556995"><strong>07 49 55 69 95</strong></a></p>
+    
+        <div class="contact-block">
+          <div class="bloc-contact">
+            <p>📞 Téléphone : <strong><a href="tel:0749556995">07 49 55 69 95</a></strong></p>
+            <p>✉️ E-mail : <strong><a href="mailto:mh.servicedepannage@gmail.com">mh.servicedepannage@gmail.com</a></strong></p>
+            <p>📍 Zone : Île-de-France</p>
+          </div>
+    
+          <aside class="form-rappel" aria-label="Contact téléphone">
+            <h3>Intervention immédiate</h3>
+            <p style="font-size:1.15rem;margin:0 0 8px 0;"><strong>📞 <a href="tel:0749556995">07 49 55 69 95</a></strong></p>
+            <p style="margin:0;">Disponible 24h/24 – 7j/7. Devis par téléphone.</p>
+          </aside>
+        </div>
+      </section>
+
+          <aside class="box" aria-label="Demande de rappel">
+            <h3 style="margin:0 0 10px;color:#111;">Faites-vous rappeler</h3>
+            <form id="callbackForm">
+              <label for="cbName" style="font-weight:800;">Nom (optionnel)</label>
+              <input id="cbName" type="text" autocomplete="name" placeholder="Votre nom"
+                     style="width:100%;padding:10px;border-radius:12px;border:1px solid #e1e5ee;margin:6px 0 12px;" />
+
+              <label for="cbPhone" style="font-weight:800;">Téléphone (recommandé)</label>
+              <input id="cbPhone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Votre numéro"
+                     style="width:100%;padding:10px;border-radius:12px;border:1px solid #e1e5ee;margin:6px 0 12px;" />
+
+              <button type="submit" class="btn btn-main" style="width:100%;cursor:pointer;">
+                RAPPELEZ-MOI
+              </button>
+
+              <p style="margin:10px 0 0;color:var(--muted);font-weight:650;font-size:.9rem;">
+                Sur mobile : ouverture SMS pré-rempli. Sur ordinateur : email pré-rempli.
+              </p>
+            </form>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> MH SERVICE — Tous droits réservés.
+    </footer>
   </div>
-</section>
 
-<script>
-  (function () {
-    const form = document.getElementById('callbackForm');
-    if (!form) return;
-  
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-  
-      const name = document.getElementById('cbName').value.trim();
-      const phone = document.getElementById('cbPhone').value.trim();
-      const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-  
-      /* 📱 MOBILE → SMS */
-      if (isMobile) {
-        let message = 'Bonjour MH SERVICE, je souhaite être rappelé.';
-        if (name) message += ' Nom : ' + name + '.';
-        if (phone) message += ' Téléphone : ' + phone + '.';
-  
-        // ✅ NUMÉRO + MESSAGE
-        window.location.href =
-          'sms:0749556995?&body=' + encodeURIComponent(message);
-        return;
-      }
-  
-      /* 💻 PC → EMAIL */
-      let body = 'Bonjour MH SERVICE,\n\nJe souhaite être rappelé.\n';
-      if (name) body += 'Nom : ' + name + '\n';
-      if (phone) body += 'Téléphone : ' + phone + '\n';
-      body += '\nMerci.';
-  
-      window.location.href =
-        'mailto:mh.servicedepannage@gmail.com?subject=' +
-        encodeURIComponent('Demande de rappel – MH SERVICE') +
-        '&body=' +
-        encodeURIComponent(body);
-    });
-  })();
-  </script>
+  <!-- Sticky call (meilleur taux d'appel sur mobile) -->
+  <div class="sticky" role="region" aria-label="Barre d'appel">
+    <div class="sticky-inner">
+      <div>
+        <strong>Urgence dépannage</strong> — Île-de-France 24/7
+      </div>
+      <a class="js-call" href="tel:0749556995" aria-label="Appeler 07 49 55 69 95">📞 Appeler 07 49 55 69 95</a>
+    </div>
+  </div>
+
   <script>
-    /* ===============================
-       ANTI-BOT MH SERVICE
-       Protection clics abusifs
-       =============================== */
-    
-    (function () {
-      const CLICK_LIMIT = 2;        // max clics
-      const TIME_WINDOW = 8000;     // 8 secondes
-      const BLOCK_TIME = 60000;     // blocage 1 min
-    
-      const now = Date.now();
-      const data = JSON.parse(localStorage.getItem('mh_antibot') || '{}');
-    
-      if (data.blockedUntil && now < data.blockedUntil) {
-        alert("Trop d'actions détectées. Veuillez patienter quelques secondes.");
-        document.body.innerHTML = "";
-        return;
-      }
-    
-      let clicks = data.clicks || [];
-    
-      function registerClick() {
-        const t = Date.now();
-        clicks = clicks.filter(c => t - c < TIME_WINDOW);
-        clicks.push(t);
-    
-        if (clicks.length > CLICK_LIMIT) {
-          localStorage.setItem('mh_antibot', JSON.stringify({
-            blockedUntil: t + BLOCK_TIME,
-            clicks: []
-          }));
-          alert("Action bloquée pour sécurité.");
-          location.reload();
-        } else {
-          localStorage.setItem('mh_antibot', JSON.stringify({
-            clicks: clicks
-          }));
-        }
-      }
-    
-      // 🔥 Protège liens téléphone & SMS
-      document.querySelectorAll('a[href^="tel:"], a[href^="sms:"]').forEach(link => {
-        link.addEventListener('click', registerClick);
-      });
-    
-    })();
-    </script>
-    
-  
+    // Année footer
+    document.getElementById('year').textContent = new Date().getFullYear();
 
+    // Menu mobile (propre + accessible)
+    (function(){
+      const btn = document.getElementById('menuBtn');
+      const menu = document.getElementById('menuList');
+      if(!btn || !menu) return;
+
+      btn.addEventListener('click', () => {
+        const open = menu.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(open));
+      });
+
+      // Sous-menus en mobile : tap -> open
+      function setupSubmenus(){
+        const isMobile = window.matchMedia('(max-width: 820px)').matches;
+        document.querySelectorAll('.has-sub > a.js-sub').forEach(a => {
+          a.onclick = (e) => {
+            if(!isMobile) return;
+            e.preventDefault();
+            const li = a.parentElement;
+            li.classList.toggle('open');
+          };
+        });
+      }
+      setupSubmenus();
+      window.addEventListener('resize', setupSubmenus);
+    })();
+
+    // Callback form: mobile => SMS, desktop => mailto
+    (function(){
+      const form = document.getElementById('callbackForm');
+      if(!form) return;
+
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+
+        const name = (document.getElementById('cbName').value || '').trim();
+        const phone = (document.getElementById('cbPhone').value || '').trim();
+
+        const ua = navigator.userAgent || '';
+        const isMobile = /Android|iPhone|iPad|iPod/i.test(ua);
+
+        // Message court = mieux pour conversion
+        let msg = "Bonjour MH SERVICE, je souhaite être rappelé.";
+        if(name) msg += " Nom : " + name + ".";
+        if(phone) msg += " Téléphone : " + phone + ".";
+
+        if(isMobile){
+          // iOS/Android compat : sms:+33...&body=
+          const smsNumber = "0749556995";
+          window.location.href = "sms:" + smsNumber + "?&body=" + encodeURIComponent(msg);
+          return;
+        }
+
+        let body = "Bonjour MH SERVICE,\n\nJe souhaite être rappelé.\n";
+        if(name) body += "Nom : " + name + "\n";
+        if(phone) body += "Téléphone : " + phone + "\n";
+        body += "\nMerci.";
+
+        window.location.href =
+          "mailto:mh.servicedepannage@gmail.com" +
+          "?subject=" + encodeURIComponent("Demande de rappel – MH SERVICE") +
+          "&body=" + encodeURIComponent(body);
+      });
+    })();
+
+    // Anti-abus léger (sans popup agressive qui casse la conversion)
+    (function(){
+      const LIMIT = 4;
+      const WINDOW_MS = 8000;
+
+      const key = "mh_call_clicks_v2";
+      function get(){ try{ return JSON.parse(localStorage.getItem(key) || "[]"); }catch(_){ return []; } }
+      function set(v){ try{ localStorage.setItem(key, JSON.stringify(v)); }catch(_){ } }
+
+      function allowClick(){
+        const now = Date.now();
+        let clicks = get().filter(t => now - t < WINDOW_MS);
+        clicks.push(now);
+        set(clicks);
+        return clicks.length <= LIMIT;
+      }
+
+      document.querySelectorAll('a.js-call[href^="tel:"]').forEach(a => {
+        a.addEventListener('click', function(e){
+          if(!allowClick()){
+            e.preventDefault();
+            // Pas d'alert => moins de friction. Option: afficher un message discret.
+          } else {
+            // ✅ Ici tu peux déclencher une conversion Google Ads si tu as gtag:
+            // gtag('event', 'conversion', { 'send_to': 'AW-XXXX/XXXX' });
+          }
+        }, {passive:false});
+      });
+    })();
+  </script>
 </body>
 </html>
