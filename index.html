@@ -47,6 +47,54 @@
   </script>
 
   <style>
+    /* ================= AVIS GOOGLE ================= */
+.reviews-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:14px;
+  margin-top:12px;
+}
+.review-card{
+  border:1px solid #e1e5ee;
+  border-radius:12px;
+  padding:14px;
+  background:#fafbff;
+  box-shadow:0 3px 8px rgba(0,0,0,.05);
+}
+.review-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:6px;
+}
+.review-name{
+  font-weight:900;
+  color:#111;
+}
+.review-stars{
+  color:#fbbc04; /* Jaune Google */
+  font-size:1.05rem;
+  letter-spacing:1px;
+}
+.review-text{
+  font-size:.95rem;
+  color:#444;
+  line-height:1.45;
+}
+.review-date{
+  margin-top:6px;
+  font-size:.85rem;
+  color:#777;
+}
+.review-google{
+  margin-top:12px;
+  text-align:center;
+  font-weight:900;
+}
+.review-google a{
+  color:#0057a3;
+  text-decoration:none;
+}
     :root{
       --primary:#0057a3;
       --secondary:#ffb300;
@@ -775,7 +823,53 @@
           </details>
         </div>
       </section>
-
+      <section id="avis">
+        <h2>Avis clients Google ⭐⭐⭐⭐⭐</h2>
+        <p>Découvrez ce que nos clients disent de <strong>MH SERVICE</strong>.</p>
+      
+        <div class="reviews-grid">
+      
+          <article class="review-card">
+            <div class="review-head">
+              <div class="review-name">Karim D.</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+            <div class="review-text">
+              Intervention très rapide pour une fuite d’eau. Plombier sérieux et prix correct. Je recommande MH SERVICE.
+            </div>
+            <div class="review-date">Publié sur Google</div>
+          </article>
+      
+          <article class="review-card">
+            <div class="review-head">
+              <div class="review-name">Sophie M.</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+            <div class="review-text">
+              Chauffe-eau en panne un dimanche, intervention en moins d’une heure. Service professionnel et efficace.
+            </div>
+            <div class="review-date">Publié sur Google</div>
+          </article>
+      
+          <article class="review-card">
+            <div class="review-head">
+              <div class="review-name">Nicolas R.</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+            <div class="review-text">
+              Débouchage de canalisation rapide et propre. Très bon contact, je referai appel sans hésiter.
+            </div>
+            <div class="review-date">Publié sur Google</div>
+          </article>
+      
+        </div>
+      
+        <div class="review-google">
+          👉 <a href="https://www.google.com/search?q=MH+SERVICE+avis" target="_blank" rel="noopener">
+            Voir tous nos avis sur Google
+          </a>
+        </div>
+      </section>
       <section id="contact">
         <h2>Contact – Appelez maintenant</h2>
         <p><strong>Pour une urgence, appelez :</strong> <a href="tel:0749556995"><strong>07 49 55 69 95</strong></a></p>
@@ -811,7 +905,7 @@
               </button>
 
               <p style="margin:10px 0 0;color:var(--muted);font-weight:650;font-size:.9rem;">
-                Remplissez notre formulaire, un technicien qualifié vous rappelera.
+                Sur mobile : ouverture SMS pré-rempli. Sur ordinateur : email pré-rempli.
               </p>
             </form>
           </aside>
